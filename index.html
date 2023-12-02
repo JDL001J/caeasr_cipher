@@ -12,20 +12,33 @@
 
 
     <h1>Caesar Cipher</h1>
-
-    <div class="box">
+<!-- 
+    <div class="box"> -->
      
       <div class="container">
         <input type="text" class="input" name="input" placeholder="  enter phrase" autofocus="on">
         <input type="number" class="shift" max="26" min="0" placeholder="0">
+        
+        <div class="btn-box">
+          <img src="images/erase-svgrepo-com.svg" class="clear" >
+          <img src="images/check-svgrepo-com.svg" class="btn">
+        </div>
+        
       </div>
-      <button class="btn">Enter</button>
       
+      
+    <!-- </div> -->
+
+
+
+
+   
+  
+    <div class='text-box'>
+      <textarea class="output" id="myText" type="text" > </textarea>
+      <img src="images/copy-svgrepo-com.svg" onclick="copyContent()" class="copy" >
     </div>
 
-    <button  onclick="copyContent()">Copy!</button>
-  
-<textarea class="output" id="myText" type="text" ></textarea>
 
     
     
@@ -37,3 +50,5 @@
 
 
 <!-- https://images.unsplash.com/photo-1568132930457-20ac2189f20b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D -->
+<!-- https://www.svgrepo.com/show/452289/erase.svg -->
+<!-- https://www.svgrepo.com/show/521116/copy.svg -->

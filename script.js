@@ -4,6 +4,18 @@ output = document.querySelector(".output");
 shift = document.querySelector(".shift")
 btn = document.querySelector(".btn")
 shiftInput = document.querySelector('.shift');
+clearBtn = document.querySelector('.clear');
+copyBtn = document.querySelector('.copy');
+
+
+
+clearBtn.addEventListener('click',clearContent)
+
+
+function clearContent(){
+    input.value = ''
+}
+
 
 shiftInput.addEventListener('keydown', (e) =>{
     if(e.keyCode === 13){
@@ -88,6 +100,7 @@ output.value =  text.join("");
 
 
 let text = document.getElementById('myText');
+text.readOnly = true;
   const copyContent = async () => {
     try {
       await navigator.clipboard.writeText(text.value);
@@ -96,3 +109,5 @@ let text = document.getElementById('myText');
       console.error('Failed to copy: ', err);
     }
   }
+
+  copyBtn.addEventListener('click',copyContent);

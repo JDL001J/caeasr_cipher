@@ -9,14 +9,31 @@
     <title>Document</title>
 </head>
 <body>
+
+
     <h1>Caesar Cipher</h1>
-    <div class="container">
-      <input type="text" class="input" name="input" placeholder="enter phrase">
-      <input type="number" class="shift" max="26" min="0" placeholder="1">
+
+    <div class="box">
+     
+      <div class="container">
+        <input type="text" class="input" name="input" placeholder="  enter phrase" autofocus="on">
+        <input type="number" class="shift" max="26" min="0" placeholder="0">
+      </div>
+      <button class="btn">Enter</button>
+      
     </div>
-    <button class="btn">Enter</button>
+
+    <button  onclick="copyContent()">Copy!</button>
   
-    <p class="output"></p>
+<textarea class="output" id="myText" type="text" ></textarea>
+
+    
+    
+    
+    
     
 </body>
 </html>
+
+
+<!-- https://images.unsplash.com/photo-1568132930457-20ac2189f20b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D -->

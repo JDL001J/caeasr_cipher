@@ -62,7 +62,7 @@ h1{
 .input{
     font-size: 20px;
     
-    padding-left: 8px;
+    padding-left: 10px;
     width: 380px;
     max-width: 500px;
     height: 55px;
@@ -75,8 +75,9 @@ h1{
 }
 
 #myText{
-     background: rgb(246, 246, 246, 0.3);
-     color: white;
+    padding-left: 4px;
+    background: rgba(252, 252, 252, 0.8);
+    color: rgb(0, 0, 0);
     margin-top: 20px;
     font-size: 20px;
     resize: none;
@@ -119,4 +120,55 @@ h1{
     position: relative;
    right: 200px;
    
+}
+
+@media (max-width: 680px)
+ {
+h1{
+    font-size: xx-large;
+}
+    .text-box{
+    
+   
+        position: relative;
+       right: 0px;
+       
+    }
+
+    #myText{
+        padding-left: 4px;
+        background: rgba(252, 252, 252, 0.8);
+        color: rgb(0, 0, 0);
+       margin-top: 20px;
+       font-size: 20px;
+       resize: none;
+       /* position: absolute;
+       left: 10%;
+       bottom: 40%; */
+       min-height: 100px;
+       max-height: 300px;
+       border-radius: 10px;
+       outline: none;
+       
+   }
+
+   .input{
+    width: 40%
+   }
+
+   .container {
+    display: flex;
+    background-color: rgb(255, 255, 255 );
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 50%;
+    max-width: 500px;
+    height: 55px;
+    
+    
+    
+}
+
+    
+  
 }
